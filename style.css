@@ -30,15 +30,18 @@ body {
     }
 
 .logo {
+    width: 233px;
+    height: 46px;
+    padding-right: 543px;
     padding-left: 230px;
     margin-top: 24px;
     margin-bottom: 24px;    
 }
 
 .attention {
-    padding-left: 543px;
     padding-right: 527px;
     margin-top: 36px;
+    white-space: nowrap;
     margin-bottom: 36px;
 }
 
@@ -62,7 +65,7 @@ body {
         text-decoration: none;
         border: none;
         background-color: var(--color-primary-pink);
-        border-radius: 50px;
+        border-radius: 16px;
         display: flex;
         justify-content: center;
         align-items: center;

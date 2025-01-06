@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Oswald, sans-serif;
 }
 
 body {
@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;    /* padding: 1rem 2rem; */
+    padding: 1rem 2rem;   
     }
 
 .logo {
@@ -50,27 +50,8 @@ body {
 }
 
 #button-head {    
-    display: flex;
-    justify-content: center;
     padding-right: 230px;
-    margin-top: 24px;
-    margin-bottom: 24px;
 }   
-.button-header {
-        width: 217px;
-        height: 48px;
-        gap: 16px;
-        color: var(--color-white);
-        font-size: 18px;
-        text-decoration: none;
-        border: none;
-        background-color: var(--color-primary-pink);
-        border-radius: 16px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-}
-
 .hero {
     display: flex;
     align-items: center;
@@ -109,16 +90,18 @@ body {
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 2rem;
-    border-radius: 50px;
+    border-radius: 16px;
     text-decoration: none;
     font-weight: bold;
     margin: 0.5rem;
     transition: all 0.3s ease;
+    font-family: Questrial, sans-serif;
 }
 
 .button-primary {
     background-color: var(--color-primary-pink);
     color: var(--color-white);
+    white-space: nowrap;
 }
 
 .button-primary:hover {

@@ -1,0 +1,138 @@
+:root {
+    /* Cores primárias */
+    --color-background: #1C1C1C;
+    --color-primary-pink: #E91E63;
+    --color-primary-green: #8BC34A;
+    --color-white: #FFFFFF;
+    --color-light-gray: #F5F5F5;
+    /* Cores secundárias */
+    --color-highlight-yellow: #FFD700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: url('./assets/images/background-image.png') center/cover;    
+    color: var(--color-white);
+}
+
+.header {
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;    /* padding: 1rem 2rem; */
+    }
+
+.logo {
+    padding-left: 230px;
+    margin-top: 24px;
+    margin-bottom: 24px;    
+}
+
+.attention {
+    padding-left: 543px;
+    padding-right: 527px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.attention span {
+    color: var(--color-primary-green);
+}
+
+#button-head {    
+    display: flex;
+    justify-content: center;
+    padding-right: 230px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}   
+.button-header {
+        width: 217px;
+        height: 48px;
+        gap: 16px;
+        color: var(--color-white);
+        font-size: 18px;
+        text-decoration: none;
+        border: none;
+        background-color: var(--color-primary-pink);
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    min-height: calc(100vh - 80px);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-title .brand {
+    color: var(--color-primary-pink);
+    display: block;
+}
+
+.hero-title .negocios {
+    color: var(--color-primary-green);
+    display: block;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--color-white);
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.button-primary {
+    background-color: var(--color-primary-pink);
+    color: var(--color-white);
+}
+
+.button-primary:hover {
+    background-color: var(--color-primary-green);
+}
+
+.button-secondary {
+    background-color: var(--color-white);
+    color: var(--color-primary-green);
+}
+
+.button-secondary:hover {
+    background-color: var(--color-light-gray);
+}
+
+.button-icon {
+    width: 24px;
+    height: 24px;
+}
+

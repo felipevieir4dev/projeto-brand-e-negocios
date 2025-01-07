@@ -123,37 +123,61 @@
     height: 24px;
 }
 
+
 .why-attend {
-    padding: 80px 20px;
+    padding: 100px 20px;
     background-color: #fff;
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-.why-attend .negocios {
+.why-attend-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.why-attend-content {
+    flex: 1;
+}
+
+.title h2 {
+    font-family: 'Oswald', sans-serif;
+    max-width: 600.95px;
+    max-height: 94px;
+    font-size: 48px;
+    line-height: 47px;
+    margin-bottom: 24px;
+    color: var(--color-primary-pink); 
+
+}
+
+.brand-pink {
+    color:var(--color-primary-pink);
+}
+
+.brand-green {
     color: var(--color-primary-green);
 }
 
-.why-attend h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.5rem;
-    color: var(--color-primary-pink);
-    margin-bottom: 40px;
-    text-transform: uppercase;
-}
-
-.why-attend p {
+.text {
     font-family: 'Questrial', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.6;
     color: #333;
-    margin-bottom: 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 587.91px;
+    max-height: 196px;
+    margin-top: 120px;
+
 }
 
-.why-attend p:last-child {
-    margin-bottom: 0;
+.why-attend-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.why-attend-image img {
+    width: 591.51px;
+    height: 591.51px;
 }

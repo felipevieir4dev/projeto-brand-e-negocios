@@ -13,18 +13,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Oswald, sans-serif;
 }
 
 .header {
-    position: sticky;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem 2rem;
     width: 100%;   
     background: linear-gradient(180deg, #ff5c933b, #ffbbd200, #ffbbd200);
-    
 }
 
 .logo {
@@ -37,10 +34,16 @@
 }
 
 .attention {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
     padding-right: 527px;
     margin-top: 36px;
     white-space: nowrap;
     margin-bottom: 36px;
+    color: var(--color-white)
+
 }
 
 .attention span {
@@ -56,9 +59,8 @@
     justify-content: space-between;
     padding: 2rem;
     min-height: calc(100vh - 80px);
-    background: url('./assets/images/background-image.png') center/cover;    
-
-    
+    background: url('./assets/images/background-image.png');    
+    background-size: cover;
 }
 
 .hero-content {
@@ -66,24 +68,40 @@
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 128px;
+    font-weight: 400;
+    line-height: 120px;
     margin-bottom: 1rem;
+
 }
 
 .hero-title .brand {
     color: var(--color-primary-pink);
-    display: block;
+    font-family: "Bebas Neue", sans-serif;
+
 }
 
 .hero-title .negocios {
+    font-family: "Bebas Neue", sans-serif;
     color: var(--color-primary-green);
-    display: block;
-}
 
+}
+.hero-title .and {
+    font-family: "Montserrat", sans-serif;
+    font-size: 72px;
+    font-weight: 600;
+    color: var(--color-white);
+    
+
+}
 .hero-subtitle {
     font-size: 1.5rem;
     margin-bottom: 2rem;
     color: var(--color-white);
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32.96px;
 }
 
 .button {
@@ -96,7 +114,7 @@
     font-weight: bold;
     margin: 0.5rem;
     transition: all 0.3s ease;
-    font-family: Questrial, sans-serif;
+    font-family: "Questrial", sans-serif;
 }
 
 .button-primary {
@@ -127,57 +145,52 @@
 .why-attend {
     padding: 100px 20px;
     background-color: #fff;
-}
-
-.why-attend-container {
+  }
+  
+  .why-attend-container {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 100px;
-}
-
-.why-attend-content {
+    gap: 57px;
+    padding-left: 102px;
+  }
+  
+  .why-attend-content {
     flex: 1;
-}
-
-.title h2 {
-    font-family: 'Oswald', sans-serif;
+  }
+  
+  .title h2 {
+    font-family: "Oswald", sans-serif;
     max-width: 600.95px;
+    font-weight: 600;
     max-height: 94px;
     font-size: 48px;
     line-height: 47px;
-    margin-bottom: 24px;
-    color: var(--color-primary-pink); 
-
-}
-
-.brand-pink {
-    color:var(--color-primary-pink);
-}
-
-.brand-green {
+    color: var(--color-primary-pink);
+    white-space: nowrap;
+  }
+  
+  .why-attend-content .brand-green {
     color: var(--color-primary-green);
-}
-
-.text {
-    font-family: 'Questrial', sans-serif;
-    color: #333;
+  }
+  .text {
+    font-family: "Questrial", sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
     max-width: 587.91px;
     max-height: 196px;
-    margin-top: 120px;
-
-}
-
-.why-attend-image {
+    margin-top: 24px;
+  }
+  
+  .why-attend-image {
     flex: 1;
     display: flex;
-    justify-content: center;
-}
-
-.why-attend-image img {
+    justify-content: flex-start;
+  }
+  
+  .why-attend-image img {
     width: 591.51px;
     height: 591.51px;
-}
+  }
+

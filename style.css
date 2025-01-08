@@ -65,6 +65,7 @@
 
 .hero-content {
     max-width: 600px;
+    padding-left: 86px;
 }
 
 .hero-title {
@@ -141,7 +142,7 @@
     height: 24px;
 }
 
-
+/* Why Attend  section*/
 .why-attend {
     padding: 100px 20px;
     background-color: #fff;
@@ -193,4 +194,115 @@
     width: 591.51px;
     height: 591.51px;
   }
+
+  /* Schedule section */
+  
+  .schedule {
+    background-image: url(./assets/images/schedule-background.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: var(--color-white);
+    padding: 80px 20px;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    color: var(--color-primary-pink);
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: "Oswald", sans-serif;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 4000;
+    margin-bottom: 60px;
+    line-height: 28px;
+    font-family: "Questrial", sans-serif;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 50px;
+    height: 2px;
+    background: var(--color-white);
+}
+
+.timeline-item {
+    position: relative;
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background: var(--color-white);
+    border-radius: 50%;
+}
+
+.timeline-image {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.timeline-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.timeline-image img:hover {
+    transform: scale(1.1);
+}
+
+.time {
+    color: var(--color-primary-green);
+    font-size: 32px;
+    font-weight: 600;
+    margin: 20px 0 15px;
+    display: block;
+    font-family: "Oswald", sans-serif;
+}
+
+.event-title {
+    color: #ff69b4;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: "Questrial", sans-serif;
+}
+
+.event-description {
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: "Questrial", sans-serif;
+}
 

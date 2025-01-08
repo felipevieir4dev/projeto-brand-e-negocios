@@ -196,108 +196,141 @@
   }
 
   /* Schedule section */
-  
   .schedule {
-    background-image: url(./assets/images/schedule-background.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url("./assets/images/schedule-background.png");
     min-height: 100vh;
-    color: var(--color-white);
     padding: 80px 20px;
-    position: relative;
-}
-
-.container {
+  }
+  
+  .container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.title {
-    color: var(--color-primary-pink);
+  }
+  
+  .title {
     text-align: center;
     font-size: 48px;
+    font-weight: 600;
+    line-height: 72.14px;
     margin-bottom: 20px;
     font-family: "Oswald", sans-serif;
-}
-
-.subtitle {
+    color:  var(--color-primary-pink);
+  }
+  
+  .subtitle {
     text-align: center;
     font-size: 32px;
-    font-weight: 4000;
-    margin-bottom: 60px;
     line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 60px;
     font-family: "Questrial", sans-serif;
-}
-
+    color: var(--color-white);
+  }
+  
 .timeline {
     display: flex;
     justify-content: space-between;
-    position: relative;
+    gap: 0px;
     margin-top: 40px;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 40px;
-    right: 50px;
-    height: 2px;
-    background: var(--color-white);
-}
-
+  }
+  
 .timeline-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    flex: 2;
-    padding: 0 20px;
-    text-align: left;
-}
-
-
-.timeline-item::before {
+    width: 180px;
+  }
+  
+.time {
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--color-primary-green);
+    margin-bottom: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .timeline-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .timeline-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .timeline-connector {
+    position: absolute;
+    left: calc(100% + 10px);
+    width: 170px;
+    height: 2px;
+    background-color: var(--color-white);
+  }
+  
+  .timeline-connector::before,
+  .timeline-connector::after {
     content: '';
     position: absolute;
     width: 8px;
     height: 8px;
-    background: var(--color-white);
+    background-color: var(--color-white);
     border-radius: 50%;
-}
-
-.timeline-image {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.timeline-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.time {
-    color: var(--color-primary-green);
-    font-size: 32px;
-    font-weight: 600;
-    margin: 20px 0 15px;
-    display: block;
-    font-family: "Oswald", sans-serif;
-}
-
-.event-title {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .timeline-connector::before {
+    left: -4px;
+  }
+  
+  .timeline-connector::after {
+    right: -4px;
+  }
+  
+  .timeline-item:last-child .timeline-connector {
+    display: none;
+  }
+  
+  .event-title {
+    font-family: "Questrial", sans-serif;
+    font-size: 20px;
     color: var(--color-primary-pink);
-    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-top: 20px;
     margin-bottom: 10px;
+    text-align: center;
+    width: 279px;
+  }
+  
+  .event-description {
     font-family: "Questrial", sans-serif;
-}
-
-.event-description {
-    font-size: 16px;
-    line-height: 1.4;
-    font-family: "Questrial", sans-serif;
-}
-
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-white);
+    line-height: 20.6px;
+    width: 279px;
+    text-align: center;
+  }
+  
+  
 /* Spekers section */
 .speakers {
     max-width: 1200px;

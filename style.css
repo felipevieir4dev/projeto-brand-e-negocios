@@ -24,10 +24,11 @@ body, html {
 }
 
 .header {
+    position: fixed;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem 2rem;
+    /* padding: 1rem 2rem; */
     width: 100%;   
     background: linear-gradient(180deg, #ff5c933b, #ffbbd200, #ffbbd200);
 }
@@ -218,6 +219,7 @@ body, html {
   .title {
     text-align: center;
     font-size: 48px;
+    padding-top: 40px;
     font-weight: 600;
     line-height: 72.14px;
     margin-bottom: 20px;
@@ -396,59 +398,51 @@ body, html {
 /*Local section*/
 .local {
   background-image: url('../assets/images/local-background.png');
-  background-size: cover;
+  background-size: 100% 659px;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  background-position: top-center;
+  height: 659px;
   position: relative;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 
 .local-content {
   max-width: 641px;
-  width: 100%;
-  margin-right: 80px;
-  padding: 32px;
-  padding-bottom: 94px;
-  background: #FFFFFF29;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(16px);
+  max-height: 471px;
+  margin: 94px 80px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(16px);
   border-radius: 24px;
 }
 
 .local-content h2 {
   font-size: 48px;
+  width: 593px;
+  height: 94px;
   color: var(--color-primary-green);
-  margin-top: 24px;
   margin-bottom: 24px;
   font-weight: 600;
   line-height: 47px;
-  display: felipe1;
-  justify-content: flex-start;
-font-family:"Oswald", sans-serif;
+  text-align: left;
+  font-family:"Oswald", sans-serif;
 }
 
 .local-content p {
   font-size: 24px;
   line-height: 28px;
   font-weight: 400;
+  margin-bottom: 25px;
   color: var(--color-white);
-  margin-bottom: 1.5rem;
+  text-align: left;
   font-family: "Questrial", sans-serif;
 }
 
 .map-container {
-  width: 100%;
-  height: 200px;
-  margin-top: 24px;
-  border-radius: 8px;
-  overflow: hidden;
+  width: 593px;
+  height: 195px;
+  border-radius: 16px;
 }
 
-.map-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
 
